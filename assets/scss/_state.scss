@@ -1,0 +1,82 @@
+.state {
+  @include breakpoint-up(large) {
+    padding-bottom: 0;
+  }
+  padding-bottom: 100px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background-image: linear-gradient(
+    145deg,
+    $Very-dark-gray-blue,
+    $Very-dark-desaturated-blue 60%
+  );
+  background-repeat: no-repeat;
+
+  &__image {
+    position: relative;
+    background-image: url("./images/bg-pattern-circles.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    flex-basis: 40%;
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center 70%;
+      background-size: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 150%;
+      background-image: url("./images/illustration-phones.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      top: -175px;
+
+      @include breakpoint-up(medium) {
+        background-size: 52%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 120%;
+        height: 140%;
+        top: -60px;
+        background-size: 119%;
+        background-position: center center;
+        left: -22%;
+      }
+    }
+  }
+  h2 {
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+  }
+  p {
+    color: $Grayish-blue-footer-text;
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+  }
+  &__grid {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 109px;
+    }
+  }
+  &__text {
+    flex-basis: 60%;
+    text-align: left;
+  }
+}

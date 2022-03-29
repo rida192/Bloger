@@ -1,0 +1,72 @@
+.free {
+  position: relative;
+  padding-top: 69px;
+  @include breakpoint-up(large) {
+    padding-top: 303px;
+    padding-bottom: calc(303px- 85px);
+  }
+  &__grid {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__image {
+    margin-bottom: 37px;
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+    }
+    position: relative;
+    min-height: 17.5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/illustration-laptop-mobile.svg");
+      background-size: 130%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include breakpoint-up(large) {
+        min-height: 41rem;
+        width: 200%;
+        height: 140%;
+        top: -190px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 109%;
+        right: 185px;
+      }
+    }
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+
+      background-position: center 70%;
+    }
+    @include breakpoint-up(large) {
+      flex-basis: 40%;
+    }
+  }
+  &__text {
+    p {
+      &:not(:first-child) {
+        margin-bottom: 46px;
+        @include breakpoint-up(large) {
+          margin-bottom: 85px;
+        }
+      }
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+    }
+    flex-basis: 60%;
+    h3 {
+      margin-left: 0;
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+    }
+  }
+}

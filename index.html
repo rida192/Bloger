@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c container container--pall">
+          <a href="#" class="header__logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop ">
+            <span> </span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a class="product" href="#"
+              >Product
+              <img class="img1" src="./images/icon-arrow-light.svg" alt="icon"
+            /></a>
+            <a class="company" href="#"
+              >Company
+              <img class="img2" src="./images/icon-arrow-light.svg" alt="icon"
+            /></a>
+            <a class="connect" href="#"
+              >Connect
+              <img class="img3" src="./images/icon-arrow-light.svg" alt="icon"
+            /></a>
+          </div>
+          <div class="header__buttons hide-for-mobile flex flex-ai-c">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="button">Sign Up</a>
+          </div>
+          <div class="header__menu fMenu close hide-for-mobile" id="productMenu">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+          <div class="header__menu sMenu close hide-for-mobile" id="companyMenu">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="header__menu tMenu close hide-for-mobile" id="connectMenu">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </nav>
+        <div class="header__mobileMenu hide-for-desktop has-fade ">
+          <a class="firstBtn" href="#">
+            Product <img class="img4" src="./images/icon-arrow-dark.svg" alt="arrow">
+            <ul class=" header__sub close firstUl">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </ul>
+          </li>
+          <a class="secondBtn" href="#">
+            Company <img class="img5" src="./images/icon-arrow-dark.svg" alt="arrow">
+            <ul class="header__sub close secondUl">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </ul>
+          </a>
+          <a class="thirdBtn" href="#">
+            Connect <img class="img6" src="./images/icon-arrow-dark.svg" alt="arrow">
+            <ul class="header__sub close thirdUl">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </ul>
+          </a>
+          <div class="header__mobileButtons hide-for-desktop flex flex-ai-c">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="button">Sign Up</a>
+          </div>
+        </div>
+      </header>
+      <div class="container container--px">
+      <h1> <span> A modern </span> publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      <div class="two-buttons ">
+        <a href="#" class="button">Start for Free</a>
+        <a href="#" class="button outline">Learn More</a>
+      </div>
+    </div>
+    </section>
+    <section class="future">
+      <div class="container container--px">
+      <h2 class="heading">Designed for the future</h2>
+      <div class="future__grid">
+        <div class="future__image"></div>
+        <div class="future__text">
+        <h3 class="heading">Introducing ad extensible editor</h3>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.</p>
+          <h3 class="heading">
+            Robust content management
+          </h3>
+          <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="state">
+      <div class="container container--px">
+        <div class="state__grid">
+        <div class="state__image">
+        </div>
+        <div class="state__text">
+        <h2>State of the Art infrastructure</h2>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="free">
+      <div class="container container--px">
+        <div class="free__grid">
+      <div class="free__image">
+
+      </div>
+      <div class="free__text">
+      <h3 class="heading">Free, open, simple</h3>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        <h3 class="heading">Powerful tooling</h3>
+        <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="footer__logo">
+          <img src="./images/logo.svg" alt="">
+        </a>
+        <div class="footer__links col1">
+          <a href="#">Product</a>
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+          
+        </div>
+        <div class="footer__links col2">
+          <a href="#">Company</a>
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__links col3">
+          <a href="#">Connect</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+

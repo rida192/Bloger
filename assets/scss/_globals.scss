@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+  overflow-x: hidden;
+
+  @include breakpoint-up(large) {
+  }
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+// Text
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  margin-top: 0px;
+  &.heading {
+    color: $Very-dark-blue-headings;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+h1 {
+  margin-bottom: 18px;
+
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  @include breakpoint-up(large) {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  margin-bottom: 1.5625rem;
+  font-size: 25px;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 2.25rem;
+    font-size: 33px;
+  }
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p {
+  font-size: 17.5px;
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  text-align: center;
+  color: $Very-dark-grayish-blue-body-copy;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+// Spacing
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
+
+    @include breakpoint-up(large) {
+      padding-top: 59px;
+      padding-bottom: 59px;
+    }
+  }
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--px {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  &--pt {
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
+  }
+  &--pr {
+    padding-right: 20px;
+    @include breakpoint-up(large) {
+      padding-right: 165px;
+    }
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+  &--pl {
+    padding-left: 20px;
+    @include breakpoint-up(large) {
+      padding-left: 165px;
+    }
+  }
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Buttons
+button,
+.button {
+  position: relative;
+  background-color: white;
+  color: $Light-red;
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 150ms ease-in-out;
+  @include breakpoint-down(medium) {
+    padding: 14px;
+  }
+
+  &:hover {
+    background-color: #ff7c87;
+    color: white;
+  }
+  &.outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    &:hover {
+      background-color: white;
+      color: $Light-red;
+    }
+  }
+}
+
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+// hellper
+.has-fade {
+  visibility: hidden;
+}
+
+.active {
+  transform: rotate(180deg);
+}
+img {
+  transition: transform 0.15s ease-in-out;
+}
+.close {
+  display: none;
+}
+.show {
+  display: block;
+}

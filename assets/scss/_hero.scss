@@ -1,0 +1,42 @@
+.hero {
+  background-image: url(/images/bg-pattern-intro-mobile.svg),
+    linear-gradient($Very-light-red, $Light-red 160%);
+  background-size: 400%, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom -500px, center;
+  @include breakpoint-up(medium) {
+    background-image: url(/images/bg-pattern-intro-desktop.svg),
+      linear-gradient(to right, $Very-light-red, $Light-red 200%);
+    background-size: 200%, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 30% center, center;
+    height: 66.5vh;
+  }
+  color: white;
+
+  height: 78vh;
+  border-bottom-left-radius: 80px;
+  h1 {
+    color: white;
+  }
+  p {
+    margin-bottom: 44px;
+    color: white;
+  }
+  .two-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    a {
+      display: inline-block;
+      text-align: center;
+    }
+    margin-bottom: 152px;
+  }
+  span {
+    @include breakpoint-down(medium) {
+      display: block;
+    }
+  }
+}
