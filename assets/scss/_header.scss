@@ -29,7 +29,7 @@
     position: relative;
     margin-bottom: 100px;
     @include breakpoint-up(large) {
-      margin-bottom: 131px;
+      margin-bottom: 134px;
     }
   }
   &__links {
@@ -90,6 +90,7 @@
     }
   }
   &__mobileMenu {
+    top: 128px;
     z-index: 1;
     position: absolute;
     width: calc(100% - 3rem);

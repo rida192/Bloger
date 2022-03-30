@@ -1,9 +1,11 @@
 .free {
+  background-color: #fafafa;
   position: relative;
   padding-top: 69px;
   @include breakpoint-up(large) {
-    padding-top: 303px;
-    padding-bottom: calc(303px- 85px);
+    padding-top: 305px;
+    padding-bottom: 220px;
+    // padding-bottom: calc(303px- 85px);
   }
   &__grid {
     @include breakpoint-up(large) {

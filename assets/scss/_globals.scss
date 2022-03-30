@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  background-color: #fafafa;
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -49,7 +50,8 @@ h1 {
   font-weight: bold;
   text-align: center;
   @include breakpoint-up(large) {
-    font-size: 50px;
+    font-size: 61px;
+    margin-bottom: 24px;
   }
 }
 
@@ -59,12 +61,15 @@ h2 {
 
   @include breakpoint-up(large) {
     margin-bottom: 2.25rem;
-    font-size: 33px;
+    font-size: 38px;
   }
 }
 
 h3 {
   font-size: 23px;
+  @include breakpoint-up(large) {
+    font-size: 29px;
+  }
 }
 
 p {
@@ -98,8 +103,8 @@ a:hover {
     }
   }
   &--py {
-    padding-top: 4.375rem;
-    padding-bottom: 4.375rem;
+    padding-top: 59px;
+    padding-bottom: 59px;
 
     @include breakpoint-up(large) {
       padding-top: 6rem;
@@ -111,10 +116,10 @@ a:hover {
     padding-left: 20px;
   }
   &--pt {
-    padding-top: 4.375rem;
+    padding-top: 50px;
 
     @include breakpoint-up(large) {
-      padding-top: 6rem;
+      padding-top: 59px;
     }
   }
   &--pr {
@@ -124,10 +129,10 @@ a:hover {
     }
   }
   &--pb {
-    padding-bottom: 4.375rem;
+    padding-bottom: 50px;
 
     @include breakpoint-up(large) {
-      padding-bottom: 6rem;
+      padding-bottom: 59px;
     }
   }
   &--pl {

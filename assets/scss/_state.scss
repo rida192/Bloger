@@ -43,6 +43,7 @@
       }
 
       @include breakpoint-up(large) {
+        z-index: 1;
         width: 120%;
         height: 140%;
         top: -60px;
