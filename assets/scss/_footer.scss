@@ -17,6 +17,10 @@
   background-color: $Ver-dark-black-blue-foote-background;
   border-top-right-radius: 80px;
   padding-top: 63px;
+  @include breakpoint-up(large) {
+    padding-top: 67px;
+    padding-bottom: 12px;
+  }
   padding-bottom: 63px;
   text-align: center;
   &__logo {
@@ -47,11 +51,15 @@
         font-weight: bold;
         margin-bottom: 32px;
         @include breakpoint-up(large) {
-          margin-bottom: 36px;
+          margin-bottom: 39px;
         }
       }
       &:not(:first-child) {
         margin-bottom: 15px;
+        @include breakpoint-up(large) {
+          margin-bottom: 19px;
+        }
+
         &:hover {
           text-decoration: underline;
           transform: scale(1.05);
