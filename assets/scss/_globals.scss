@@ -58,6 +58,7 @@ h1 {
 h2 {
   margin-bottom: 1.5625rem;
   font-size: 25px;
+  letter-spacing: -1px;
 
   @include breakpoint-up(large) {
     margin-bottom: 2.25rem;
